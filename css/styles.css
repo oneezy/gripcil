@@ -1,0 +1,97 @@
+/*
+    GRIPCIL
+---------------------------------------------------------------------------------- */
+
+/*
+    RESET
+--------------------------------------- */
+*, *:after, *:before { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
+*:focus { outline: none; }
+
+*::selection { background: rgba(0, 0, 0, 0.25); }
+
+html { font-family: "Roboto"; }
+body { color: #fff; }
+img { max-width: 100%; }
+a { text-decoration: none; color: #000; }
+
+/*
+    TOUCH DEVICES
+--------------------------------------- */
+@media screen and (min-width: 0) and (max-width: 1024px) {
+    * {
+     outline: none; touch-callout: none; text-size-adjust: none; select: none; highlight: none; tap-highlight-color: rgba(0,0,0,0); overflow-scrolling: touch;
+    -webkit-touch-callout: none; -webkit-text-size-adjust: none; -webkit-user-select: none; -webkit-highlight: none; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-overflow-scrolling: touch;
+    -ms-user-touch-callout: none; -ms-user-text-size-adjust: none; -ms-user-select: none; -ms-user-highlight: none; -ms-user-tap-highlight-color: rgba(0,0,0,0); -ms-user-overflow-scrolling: touch;
+    -moz-user-touch-callout: none; -moz-user-text-size-adjust: none; -moz-user-select: none; -moz-user-highlight: none; -moz-user-tap-highlight-color: rgba(0,0,0,0); -moz-user-overflow-scrolling: touch;
+    -khtml-user-touch-callout: none; -khtml-user-text-size-adjust: none; -khtml-user-select: none; -khtml-user-highlight: none; -khtml-user-tap-highlight-color: rgba(0,0,0,0); -khtml-user-overflow-scrolling: touch;
+    }
+}
+
+.drop-shadow {-webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,0.8)); filter: drop-shadow(0 0 10px rgba(0,0,0,0.8)); }
+.material-icons { line-height: 0 !important; color: #0096d6; animation: arrowmove 1s linear infinite; position: relative; top: 12px; }
+
+@keyframes arrowmove {
+    0% { opacity: 1; }
+    50% { opacity: .5; }
+    100% { opacity: 1; }
+}
+
+/*
+----------------------------------------------------------------------------------
+    Mobile
+---------------------------------------------------------------------------------- */
+@media (min-width: 0) {
+
+    body { background: url("../images/bg-griptape.jpg") repeat 0 0; }
+    main { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; }
+    header { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    h1 { display: none; }
+    h2 { width: 90%; background: rgba(0, 0, 0, 0.56); color: #fff; font-size: 14px; text-transform: uppercase; letter-spacing: 3px; font-weight: 100; border-top: 1px solid rgba(255, 255, 255, 1); border-bottom: 1px solid rgba(255, 255, 255, 1); padding: .7rem;  }
+    h3 { color: #fff; font-size: 22px; text-transform: uppercase; font-weight: 500; margin: 1.5rem 0 .25rem; }
+    section { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    p { color: rgba(255, 255, 255, 1); text-transform: uppercase; font-size: 14px; font-weight: 300; }
+    form {  }
+    form * { width: 100%; display: inline-block; text-align: center; }
+    input { padding: 1rem; margin: 0 0 10px; border-radius: 7px; height: 50px; min-height: 50px; }
+    input[type=text] { background: #fff; border: 2px solid black; text-align: left; }
+    input[type=submit] { background: #000; border: 2px solid #fff; color: #fff; font-size: 24px; font-weight: 900; text-transform: uppercase; line-height: .6; }
+    input[type=submit]:hover { transition: background .25s; background: #0096d6; border: 2px solid #fff; color: #fff; font-size: 24px; font-weight: 900; text-transform: uppercase; line-height: .6; }
+
+
+    .material-icons { font-size: 60px !important; }
+    .logo { max-width: 100%; padding: 2rem 4rem; }
+
+    .features { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 80%; }
+    .features ul { text-align: left; list-style: none; }
+    .features li:before { content: ""; display: block; width: 8px; height: 8px; background: #0096d6; border-radius: 100%; position: absolute; left: -20px; top: 5px; }
+    .features li { font-weight: 300; font-size: 12px; margin: 0 0 5px; position: relative; }
+    .subscribe { width: 90%; }
+}
+
+
+/*
+    Tablet
+---------------------------------------------------------------------------------- */
+@media (min-width: 769px) {
+
+    .logo { max-width: 65%; padding: 3rem 0; }
+    h2 { font-size: 31px; letter-spacing: 9px; width: 100%; margin: 0 0 2rem; }
+    h3 { font-size: 36px; }
+    section { width: 40%; }
+    p { font-size: 24px; }
+    .features { width: 100%; }
+    .features ul { margin: 0 0 3rem; }
+    .features li { font-weight: 300; font-size: 16px; margin: 0 0 5px; position: relative; }
+    .material-icons { font-size: 60px !important; margin: 1rem 0 3rem; }
+
+}
+
+/*
+    Desktop
+---------------------------------------------------------------------------------- */
+@media (min-width: 1025px) {
+
+
+
+}
